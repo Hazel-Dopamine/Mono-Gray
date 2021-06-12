@@ -1,0 +1,636 @@
+@charset "utf-8";
+body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+	margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.3);
+  background: #000 url("broken_noise.png") repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    background: #000 url("broken_noise.png") repeat;
+  }
+}
+/*--------------HEADER---------------*/
+
+.header {
+	position:absolute; 
+  background: #000 url("broken_noise.png") repeat;  padding-top: 40px;
+	width:1260px;
+	height:50px;
+  text-align: left;
+	top: 0%;
+    left: 0%;
+
+}
+.logo img{
+
+	width: 60px;
+    top: 20%;
+    left: 1%;
+    position: absolute;
+}/*
+.topic {
+	    top: 4%;
+    left: 35%;
+	    color: grey;
+	font-family:Cambria;
+    position: absolute;
+}*/
+
+
+/*--------------NAVBAR---------------*/
+nav{
+	display:flex;
+	padding: 0% 6%;
+	justify-content:center;
+	align-items: center;
+}
+.navbar{
+		font-family:  montserrat;
+ 	flex:1;
+	text-align:center;
+
+}
+
+
+.navbar ul li{
+    font-size: 1.1rem;
+	    list-style: none;
+    display: inline-block;
+	padding: 0px 6px;
+	position: relative;
+}
+.navbar ul li a{
+font-size: 17px;
+    text-decoration: none;
+    color: white;
+	transition:0.6s ease;
+	
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid grey;
+	background-color: #47444;
+
+}
+button{
+	color :#fbfcfd;
+	padding:10px 25px;
+	background:transparent;
+	border:1px solid #fff;
+	border-radius: 20px;
+	outline:none;
+	cursor:pointer;
+	top:20%;
+	left:85%;
+	position:absolute;
+}
+nav .fa{
+	display: none;
+}
+/*--------------TITLE PICTURE---------------*/
+
+#home{
+	
+  font-family: "Cormorant Garamond", Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+#home::before{
+    content: "";
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+	
+    background:linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+    height: 650px;
+    width: 100%;
+    z-index:-1 ;
+    opacity: 1.0;
+}
+.heading{
+	width:90%;
+    color: white;
+  font-family: "Cormorant Garamond";
+
+       position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home h1{
+	font-size:62px;
+  font-family: "Cormorant Garamond";
+}
+.home p{
+	margin :10px 0 40px;
+	font-size:14px;
+	color :white;
+}
+/*--------------SPECIAL MENU ---------------
+
+.special  {
+	width :90%;
+	margin:auto;
+
+	padding-top:100px;
+		color :white;
+}
+h1{
+		text-align:center;
+	font-size: 36px;
+	font-weight:600;
+}
+.col-3{
+	 display:inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-3 img {
+ width: 300px;
+    height: 450px;
+    padding: 10px;
+    margin: 10px;	
+}
+.smallcontain{
+	max-width: 1080px;
+	margin:auto;
+	padding-left: 25px;
+	padding-right: 25px;	
+}
+.col-3 img:hover{
+    background-color: white;
+    cursor: pointer;
+}
+*/
+/*--------------SLIDESHOW---------------*/
+.special h1{
+text-align: center;
+		color :white;
+}
+.slideshow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+.middle{
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navgallery{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+		border-radius: 20px;
+
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+/*--------------REVIEW---------------*/
+
+.review h1{
+	width :90%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+		color :white;
+}
+.review h5{
+	text-align: center;
+	color:white;
+}
+
+.col-4 img {
+ width:300px;
+}
+.col-4 {
+	
+	justify-content:space-around;
+  box-sizing: border-box;
+
+  float: left;
+ width:33%;
+color:white;
+  padding: 0 60px;
+
+}
+.col-4 img:hover{
+    background-color: white;
+    cursor: pointer;
+}
+/*--------------BUTTON---------------*/
+
+.btn{
+display:inline-block;
+	text-decoration: none;
+	color:white;
+	border:1px solid #3E3429;
+	padding:12px 34px;
+	font-size:13px;
+	background: #3E3429;
+	position:relative;
+	cursor:pointer;
+}
+.btn:hover{
+	border :1px solid white;
+	background :transparent;
+
+	
+}
+.login{
+	font-family: Cambria;
+	top:5%;
+	left:88%;
+	position: absolute;
+	padding: 10px 30px ; 
+	color:#fff;
+	
+	text-decoration: none ;
+}
+
+.login:hover{
+	background-color: #47444;
+	color:#000;
+}
+/*--------- CONTACT ------------*/
+.contact{
+	margin:100px auto;
+	width:80%;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("michal-parzuchowski-ItaV89TNkks-unsplash (1).jpg");
+	background-position :center;
+	background-size: cover;
+	border-radius:10px;
+	text-align:center;
+	padding:100px 0 ; 
+}
+.contact h1{
+	color:antiquewhite;
+	margin-bottom:40px;
+	padding: 0;
+}
+/*------------------------------FOOTER----------------------------------*/
+
+.footer{
+	font-family:  montserrat;
+  background-color:#2B1919;
+	color:whitesmoke;
+   padding: 100px;
+	width: 1055px;
+
+	font-size:30;
+	justify-content: center;
+	margin-top: -250px;
+    clear: both;
+    position: relative;
+    height: 200px;
+
+}
+.footer h3{
+	text-align: center;
+}
+/*------------------------------ICON----------------------------------*/
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 5px;
+
+    text-decoration: none;
+}
+.fa-facebook {
+    color: white;
+
+}
+
+.fa-instagram {
+    color: white;
+}
+.fa-globe {
+    color: white;
+}
+/*----------------------About Us---------------------*/
+	
+.Section{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.content-section .content-one{
+	float: left;
+	width: 55%;
+	padding-top: 100px;
+}
+
+.content-one h3{
+	color: black;
+}
+
+.image-one{
+	float: right;
+	width: 40%;
+	padding-bottom: 100px;
+}
+
+.image-one img
+{
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+}
+
+.content-section .content-two{
+	float: right;
+	text-align: right; 
+	width: 55%;
+}
+
+.image-two{
+	float: left;
+	width: 40%;
+	padding-bottom: 100px;
+}
+
+.image-two img
+{
+	width: 100%;
+	height: auto;
+	padding-top: 150px;
+}
+
+/*--------------PHONE VIEW---------------*/
+@media screen and ( max-width:600px)
+{
+	.logo img{
+
+	width: 60px;
+    top: 20%;
+    left: 12%;
+    position: absolute;
+}
+	#home{
+	
+  font-family: "Cormorant Garamond", Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+#home::before{
+    content: "";
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+	
+    background:linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+    height: 640px;
+    width: 360px;
+    z-index:-1 ;
+    opacity: 1.0;
+}
+.heading{
+	width:90%;
+    color: white;
+  font-family: "Cormorant Garamond";
+
+       position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home h1{
+	font-size:32px;
+  font-family: "Cormorant Garamond";
+}
+.home p{
+	margin :0px 0 150px;
+	font-size:14px;
+	color :white;
+}
+
+	.navbar ul li{
+		display:block;
+	
+	}
+	.navbar{
+		position: absolute;
+		background: #2F2222;
+		height: 100vh;
+		width:200px;
+		top:10%;
+		left:-200px;
+		text-align: left;
+		z-index:2;
+		transition: 1s;
+	}
+	button{
+			display: block;
+	
+	}
+	nav .fa{
+		display: block;
+		color:lemonchiffon;
+		margin:10px;
+		left:1%;
+		position: absolute;
+		font-size:30px;
+		cursor: pointer;
+	}
+	.navbar ul{
+		padding:30px;
+	}
+
+
+/*--------------SLIDESHOW---------------*/
+.special h1{
+text-align: center;
+		color :white;
+}
+.slideshow{
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+}
+.middle{
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navgallery{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 20px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+		border-radius: 20px;
+
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+/*--------------REVIEW---------------*/
+
+.review h1{
+	width :90%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+		color :white;
+}
+.review h5{
+	font-size: 10px;
+	text-align: center;
+	color:white;
+}
+	.col-4 img{
+		width:20px;
+	}
+.col-4 {
+	 display:inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+	.contact h1{
+	color:antiquewhite;
+	margin-bottom:40px;
+	padding: 0;
+		font-size:20px;
+}
+	/*------------------------------FOOTER----------------------------------*/
+
+.footer{
+	font-family:  montserrat;
+  background-color:#2B1919;
+	color:whitesmoke;
+   padding: 100px;
+	width: 220px;
+
+	font-size:30;
+
+	margin-top: -250px;
+    clear: both;
+    position: relative;
+    height: 200px;
+
+}
+.footer h3{
+	text-align: center;
+}
+	
+}	/*----------XXXXXXXXXXXXXX----PHONE MEDIA END-------XXXXXXXXXXXXXX------*/
+
