@@ -137,6 +137,32 @@ nav .fa{
 	font-size:14px;
 	color :white;
 }
+.att {
+	width :80%;
+	margin:auto;
+	text-align:left;
+	padding-top:100px;
+}
+h1{
+	font-size: 36px;
+	font-weight:600;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 360px;
+    height: 340px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
 /*--------------SPECIAL MENU ---------------
 
 .special  {
@@ -173,6 +199,7 @@ h1{
     cursor: pointer;
 }
 */
+
 /*--------------SLIDESHOW---------------*/
 .special h1{
 text-align: center;
