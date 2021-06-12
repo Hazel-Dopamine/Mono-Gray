@@ -138,6 +138,15 @@ nav .fa{
 	font-size:14px;
 	color :white;
 }
+#menuz{
+    background: #000 url("broken_noise.png") repeat;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 50%;
+	
+}
 .att {
 	width :80%;
 	margin:auto;
