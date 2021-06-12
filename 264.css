@@ -144,8 +144,9 @@ nav .fa{
 	padding-top:100px;
 }
 att h2{
-	font-size: 36px;
+	font-size: 50px;
 	font-weight:600;
+	color:white;
 }
 .gallery{
     display: flex;
