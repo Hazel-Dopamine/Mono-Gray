@@ -147,6 +147,24 @@ nav .fa{
     height: 50%;
 	
 }
+#slaide{
+    background: #000 url("broken_noise.png") repeat;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 50%;
+	
+}
+#custpick{
+    background: #000 url("broken_noise.png") repeat;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 50%;
+	
+}
 .att {
 	width :80%;
 	margin:auto;
