@@ -18,7 +18,8 @@ body {
 
 .header {
 	position:absolute; 
-  background: #000 url("broken_noise.png") repeat;  padding-top: 40px;
+  background: #000 url("broken_noise.png") repeat; 
+	padding-top: 40px;
 	width:1260px;
 	height:50px;
   text-align: left;
@@ -143,7 +144,7 @@ nav .fa{
 	text-align:left;
 	padding-top:100px;
 }
-att h2{
+.att h2{
 	font-size: 60px;
 	font-weight:600;
 	color:white;
@@ -155,8 +156,8 @@ att h2{
     flex-wrap: wrap;
 }
 .gallery img{
-    width: 300px;
-    height: 280px;
+    width: 200px;
+    height: 150px;
     padding: 10px;
     margin: 10px;
 }
@@ -165,42 +166,6 @@ att h2{
     cursor: pointer;
 }
 
-/*--------------SPECIAL MENU ---------------
-
-.special  {
-	width :90%;
-	margin:auto;
-
-	padding-top:100px;
-		color :white;
-}
-h1{
-		text-align:center;
-	font-size: 36px;
-	font-weight:600;
-}
-.col-3{
-	 display:inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.col-3 img {
- width: 300px;
-    height: 450px;
-    padding: 10px;
-    margin: 10px;	
-}
-.smallcontain{
-	max-width: 1080px;
-	margin:auto;
-	padding-left: 25px;
-	padding-right: 25px;	
-}
-.col-3 img:hover{
-    background-color: white;
-    cursor: pointer;
-}
-*/
 
 /*--------------SLIDESHOW---------------*/
 .special h1{
