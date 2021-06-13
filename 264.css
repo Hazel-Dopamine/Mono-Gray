@@ -355,14 +355,14 @@ display:inline-block;
   background-color:#2B1919;
 	color:whitesmoke;
    padding: 100px;
-	width: 1055px;
+	width:auto;
 
 	font-size:30;
 	justify-content: center;
 	margin-top: -250px;
     clear: both;
     position: relative;
-    height: 200px;
+    height: auto;
 
 }
 .footer h3{
