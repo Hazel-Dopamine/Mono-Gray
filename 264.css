@@ -557,7 +557,8 @@ display:inline-block;
 	background-color: darksalmon;
 }
 /*--------------PHONE VIEW---------------*/
-@media screen and ( max-width:600px)
+
+@media all and ( max-width:500px)
 {
 	.logo img{
 
@@ -584,7 +585,7 @@ display:inline-block;
     top: 0;
     left: 0;
 	
-    background:linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+    background:linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("wallpaper.jpg");
     height: 640px;
     width: 360px;
     z-index:-1 ;
@@ -640,9 +641,23 @@ display:inline-block;
 		cursor: pointer;
 	}
 	.navbar ul{
-		padding:30px;
+		padding:50px;
 	}
+.login{
+	font-family: Cambria;
+	top:3%;
+	left:66%;
+	position: absolute;
+	padding: 10px 30px ; 
+	color:#fff;
+	
+	text-decoration: none ;
+}
 
+.login:hover{
+	background-color: #47444;
+	color:#000;
+}
 
 /*--------------SLIDESHOW---------------*/
 .special h1{
@@ -718,26 +733,32 @@ input[name="r"]{
 }
 /*--------------REVIEW---------------*/
 
-.review h1{
-	width :90%;
-	margin:auto;
-	text-align:center;
-	padding-top:100px;
-		color :white;
+.review {
+	display: none;
 }
-.review h5{
-	font-size: 10px;
-	text-align: center;
+.review h4{
+	font-size: 20px;
+	text-align:right;
 	color:white;
-}
-	.col-4 img{
-		width:20px;
-	}
-.col-4 {
-	 display:inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
+}
+	.col-4 h1{
+		  color: white;
+	    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+
+
+	}
+	.col-4{
+    display: flex;
+    align-items: center;
+			margin-right:50px; 
+
+}
+.col-4 img{
+    width: 100px;
+    height: 70px;
+    padding: 0px 70px;
 }
 	.contact h1{
 	color:antiquewhite;
@@ -745,6 +766,14 @@ input[name="r"]{
 	padding: 0;
 		font-size:20px;
 }
+	.fa-star {
+    padding: 5px;
+    font-size: 10px;
+    width: 5px;
+
+    text-decoration: none;
+}
+
 	/*------------------------------FOOTER----------------------------------*/
 
 .footer{
@@ -752,19 +781,21 @@ input[name="r"]{
   background-color:#2B1919;
 	color:whitesmoke;
    padding: 100px;
-	width: 220px;
+	width:auto;
 
 	font-size:30;
-
+	justify-content: center;
 	margin-top: -250px;
     clear: both;
     position: relative;
-    height: 200px;
+    height: auto;
 
 }
 .footer h3{
 	text-align: center;
 }
-	
+	hr {
+		display: none;
+	}	
 }	/*----------XXXXXXXXXXXXXX----PHONE MEDIA END-------XXXXXXXXXXXXXX------*/
 
