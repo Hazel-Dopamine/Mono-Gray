@@ -1,34 +1,42 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>ABOUT US</title>
-		<link href="264.css" rel="stylesheet" type="text/css">
-	</head>
+<head>
+<meta charset="utf-8">
+<title>Hazel Dopamine</title>
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="264.css" rel="stylesheet" type="text/css">
+</head>
 
-	<body>
-		<div class="header">
+<body>
+	<div class="header">
+				
 			<div class ="main">
 				<div class="logo">
-					<img src="Untitled_design.png">
-						<nav>
-							<div class ="navbar" id="navbar">
-								<i class="fa fa-bars" onClick="hideMenu()" ></i>
-								<ul>
+				<img src="Untitled_design.png">
+		<nav>
+					<div class ="navbar" id="navbar">
+						<i class="fa fa-bars" onClick="hideMenu()" ></i>
+						<ul>
 							<li><a href = "index.html">Home</a></li>
 							<li><a href = "menu.html">Menu</a></li>
 					        <li><a href="gallery.html">Gallery</a></li>
 				            <li><a href="AboutUs.html">About Us</a></li>
 				            <li><a href="contact.html">Contact</a></li>
-					  </ul>
-							</div>
-				
-							<i class="fa fa-bars" onClick="showMenu()"></i>
-						</nav>
+					  </ul> 
+				 	</div>
+				<i class="fa fa-bars" onClick="showMenu()"></i>
+			</nav>
 				</div>
 		    </div>
-		</div>
-		
+	</div>
+	 
+	<section class="photo" id="photo">
+			<h1 class="topic">ABOUT US</h1>
+			  <br><br></section>
+<section id="aboutnyah">
+	
 		<div class="Section">
 			<div class="container">
 				<div class="content-section">
@@ -58,9 +66,10 @@
 					
 				</div>
 			</div>
-		</div>
-			<!--------------------------------------FOOTER--------------------------------------->
-			  <section class="footer">
+		</div></section>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<section class="footer">
 				<center>
 				  		<h3>Follow us on Social Media</h3>
 
@@ -79,5 +88,16 @@
 		  			</div>
 				</center>
      		 </section>
-	</body>
+			<!--------------------------------------JAVASCRIPT-------------------------------------->
+
+<script>
+	var navbar = document.getElementById("navbar");
+	function showMenu(){
+		navbar.style.left="0";
+	}
+	function hideMenu(){
+		navbar.style.left="-200px";
+	}
+	</script>
+</body>
 </html>
